@@ -1,0 +1,110 @@
+.product-detail-image-block {
+  .slider-big-image {
+    max-height: 480px;
+    margin-bottom: 16px;
+
+    .slick-slider {
+      .slick-list {
+        .slick-track {
+          .slick-slide {
+            & > div {
+              width: auto;
+              margin: auto;
+              height: 480px;
+              position: relative;
+              border-radius: 3px;
+              transition: all 0.15s ease-in-out;
+            }
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: auto;
+              max-height: 100%;
+              margin: auto;
+              border: 2px solid transparent;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slider-small-image {
+    margin-bottom: 16px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .slick-slider {
+      .slick-prev {
+        top: 40px;
+        left: -50px;
+        font-size: 60px;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .slick-next {
+        top: 40px;
+        right: -10px;
+        font-size: 60px;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .slick-list {
+        .slick-track {
+          .slick-slide {
+            & > div {
+              width: 90%;
+              margin: auto;
+              height: 114px;
+              position: relative;
+              border-radius: 3px;
+              border: 1px solid #e6e6e6;
+              transition: all 0.15s ease-in-out;
+            }
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: auto !important;
+              max-height: 100%;
+              margin: auto;
+              border: 2px solid transparent;
+              border-radius: 3px;
+            }
+
+            &:hover {
+              & > div {
+                border-color: #000;
+              }
+            }
+
+            &.slick-current {
+              & > div {
+                border-color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        bottom: -25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  opacity: 1;
+  display: none;
+  background-color: #000;
+
+  &:hover {
+    border-color: #000;
+  }
+
+  &.active {
+    display: flex;
+    animation: slip-down 0.3s ease-in-out;
+  }
+
+  @keyframes slip-down {
+    from {
+      bottom: 150px;
+      opacity: 0;
+    }
+
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.bread-crumb {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+
+  .list-items {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-transform: uppercase;
+
+      &.link {
+        text-transform: initial;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+}

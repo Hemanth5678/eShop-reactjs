@@ -1,0 +1,58 @@
+.box {
+  margin: 16px 0;
+
+  &:hover {
+    .icon {
+      animation: rotate-full 0.3s ease;
+      border-radius: 6px;
+    }
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto 15px;
+    animation: border-radius-50 0.1s ease;
+
+    @keyframes border-radius-50 {
+      from {
+        border-radius: 6px;
+      }
+      to {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @keyframes rotate-full {
+    from {
+      transform: rotate(0);
+      border-radius: 50%;
+    }
+    to {
+      transform: rotate(360deg);
+      border-radius: 6px;
+    }
+  }
+
+  .detail {
+    text-align: center;
+
+    .title {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .desc {
+      font-size: 13px;
+    }
+  }
+}

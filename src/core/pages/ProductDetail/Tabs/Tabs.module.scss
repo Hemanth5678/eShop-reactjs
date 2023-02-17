@@ -1,0 +1,29 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #e5e5e5;
+
+  & > div {
+    height: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      border-bottom: 2px solid #000;
+    }
+
+    &.active {
+      border-bottom: 2px solid #000;
+    }
+
+    & + div {
+      margin-left: 24px;
+    }
+  }
+}

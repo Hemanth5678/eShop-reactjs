@@ -1,0 +1,25 @@
+.pro-sidebar {
+  color: rgb(107 114 128 / 1);
+
+  .pro-sidebar-inner {
+    background-color: #f3f4f6;
+  }
+
+  .pro-icon-wrapper {
+    background-color: #e5e5e5 !important;
+  }
+
+  .pro-inner-item {
+    &:hover {
+      color: #000 !important;
+    }
+
+    &:focus {
+      color: #000 !important;
+    }
+  }
+
+  .pro-inner-list-item {
+    background-color: #e7e7e7 !important;
+  }
+}

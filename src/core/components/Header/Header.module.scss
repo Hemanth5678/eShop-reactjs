@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  padding-top: 0px;
+  animation: padding-top-70-0 0.3s ease;
+
+  &.active {
+    padding-top: 70px;
+    animation: padding-top-0-70 0.3s ease;
+
+    @keyframes padding-top-0-70 {
+      from {
+        padding-top: 0px;
+      }
+      to {
+        padding-top: 70px;
+      }
+    }
+  }
+
+  @keyframes padding-top-70-0 {
+    from {
+      padding-top: 70px;
+    }
+    to {
+      padding-top: 0px;
+    }
+  }
+}

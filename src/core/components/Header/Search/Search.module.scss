@@ -1,0 +1,48 @@
+.search-bar {
+  top: -70px;
+  animation: slip-up 0.3s ease;
+
+  &.active {
+    top: 0;
+    animation: slip-down 0.3s ease;
+  }
+
+  @keyframes slip-up {
+    from {
+      top: 0px;
+    }
+
+    to {
+      top: -70px;
+    }
+  }
+
+  @keyframes slip-down {
+    from {
+      top: -70px;
+    }
+
+    to {
+      top: 0;
+    }
+  }
+}
+
+.backdrop {
+  display: none;
+  z-index: 2;
+
+  &.active {
+    display: block;
+    animation: opacity-0-50 0.15s linear;
+  }
+
+  @keyframes opacity-0-50 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+}

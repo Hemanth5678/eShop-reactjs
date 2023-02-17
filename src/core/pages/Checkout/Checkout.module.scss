@@ -1,0 +1,77 @@
+.payment {
+  .list-options {
+    .option {
+      background-color: #fff;
+      border: 1px solid rgb(209 213 219);
+      border-top-left-radius: 0.375rem;
+      border-top-right-radius: 0.375rem;
+      --tw-text-opacity: 1;
+      color: rgb(17 24 39 / var(--tw-text-opacity));
+
+      &.active {
+        .top {
+          .wrapper {
+            .point {
+              background-color: #000;
+            }
+          }
+        }
+        .bottom {
+          display: block;
+        }
+      }
+
+      & + .option {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 0.375rem;
+        border-bottom-right-radius: 0.375rem;
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 10px;
+        cursor: pointer;
+        user-select: none;
+
+        .wrapper {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          .point {
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid rgb(209 213 219);
+            position: relative;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 4px;
+              height: 4px;
+              background-color: #fff;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+
+      .bottom {
+        padding: 16px 10px;
+        background-color: #f8f8f8;
+        display: none;
+      }
+    }
+  }
+}
