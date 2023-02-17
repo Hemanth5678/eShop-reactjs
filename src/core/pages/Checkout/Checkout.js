@@ -14,7 +14,6 @@ import { MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 import { publicRoutes } from '~/routes/routes';
 
 import logo from '~/assets/images/logo.png';
-import imgPayment from '~/assets/images/payment/payment1.svg';
 
 import { formatIndianMoney } from '~/utils/format';
 import Validation from '~/utils/validation';
@@ -56,18 +55,10 @@ const Checkout = () => {
   ]);
   const [paymentMethod, setPaymentMethod] = useState({});
   const [listPaymentMethod, setListPaymentMethod] = useState([
-    // {
-    //   id: 1,
-    //   name: 'Cash on delivery (COD)',
-    //   image: imgPayment,
-    //   value: 'CASH',
-    //   content: `<p>You only have to pay after receiving the goods.</p>
-    //             <i className="block font-bold my-2">Viewing is allowed, not testing.</i>`,
-    // },
+
     {
       id: 1,
       name: 'Pay via Razorpay',
-      image: imgPayment,
       value: 'BANKING',
       content: `<div>scan QR code</div>
                 <ul>
